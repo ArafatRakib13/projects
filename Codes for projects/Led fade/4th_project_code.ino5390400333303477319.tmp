@@ -1,0 +1,28 @@
+int led=9;
+int i;
+
+void setup() {
+  pinMode(led,OUTPUT);
+  // put your setup code here, to run once:
+
+}
+
+void loop() {
+  for(i=0;i<=255;i+=5)
+  {
+    analogWrite(led,i);
+    delay(500);
+  }
+   for(i=255;i>=0;i-=5)
+  {
+    analogWrite(led,i);
+     delay(500);
+  }
+  
+  
+
+
+  
+  // put your main code here, to run repeatedly:
+
+}
